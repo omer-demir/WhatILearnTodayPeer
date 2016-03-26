@@ -1,0 +1,6 @@
+- MVC’de global olarak error sayfasını göstermek ya da her yerde handle etmek istiyorsak bir tane HandleErrorAttribute tanımlarız. Bunu da Filter congif altında RegisterGlobalFilters metodunda filters.add diyerek ekleriz. – ActionFilterAttribute
+- MVC’de Windows authentication için projenin properties’e git oradan Windows authentication’ı true yap
+- MVC’de caching için doğru süreyi bulmak zor o yüzden web config kullanarak caching profile tanımlayabiliriz.
+- Client side tarafında lokalizasyonu çözmek için web config tanımı kullanılır.
+- OWIN konusunda “Open Web Inteface .NET” açılımı. OWIN bize daha basit ve daha az dependencyli bir ortam sunmakta. NodeJS gibi çalışıyor.
+- Katana OWIN için .NET implementasyonu aslında. Kendi modüllerini kullanmaya olanak sağlıyor sana.

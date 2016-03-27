@@ -4,3 +4,10 @@
 - Client side tarafında lokalizasyonu çözmek için web config tanımı kullanılır.
 - OWIN konusunda “Open Web Inteface .NET” açılımı. OWIN bize daha basit ve daha az dependencyli bir ortam sunmakta. NodeJS gibi çalışıyor.
 - Katana OWIN için .NET implementasyonu aslında. Kendi modüllerini kullanmaya olanak sağlıyor sana.
+- ASPNET 5 ile artık web sitesi geliştirme kolaylaşmaya başladı özellikle; Middleware kavramı geniş olarak yer almakta.
+	- Fluent Api yardımıyla dll yerine paketlerinizi seçebiliyorsunuz.
+	- NPM, Bower, Nuget paketlerini yönetebilmeniz size bir çok özellik sağlıyor.
+	- Grunt ve gulp gibi toolları kullanarak geliştirme sonrası süreci hızlandırabiliyoruz.
+	- Bydefault gelen dependency injection ile artık güvence altında sayılırız. 
+	- Sanırım Microsoft NodeJs desteğini kendini ona yönlendirmeye başlamasından belli ediyor.
+	- Tüm fonksiyonları async yapmaya sizi bir nevi zorluyor sayılır.

@@ -11,3 +11,4 @@
 	- Bydefault gelen dependency injection ile artık güvence altında sayılırız. 
 	- Sanırım Microsoft NodeJs desteğini kendini ona yönlendirmeye başlamasından belli ediyor.
 	- Tüm fonksiyonları async yapmaya sizi bir nevi zorluyor sayılır.
+- ASP NET 5 te özellikle mvc'nin kullandığı özellikleri Startup cs'e tanımlarken sırasına dikka etmek lazım.

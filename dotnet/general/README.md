@@ -34,6 +34,8 @@
 - ORM iş olarak SQL işlemlerini saklaması gerekir lakin tam tersine SQL ile işlemler yapabiliyor oluşumuz OOP’ye encapsulation’a aykırı
 - Test işlemini ve mock işlemini zorlaştırması
 
+**Internal ile İşaretlenmiş Sınıfların Diğer Namespacelere açma**
+Bu işlemi yapabilmek için *AssemblyInfo* üzerinden `[assembly: InternalsVisibleTo("namespace")]` yeterli olacaktır.
 
 
 

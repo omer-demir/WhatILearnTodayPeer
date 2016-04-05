@@ -39,7 +39,7 @@ Bu işlemi yapabilmek için *AssemblyInfo* üzerinden `[assembly: InternalsVisib
 
 **Static classı özel kullanım durumları dışında kullanmamak gerekir**
 
-- Static class, bir instance'ı alınamayan, bir interface ya da diğer bir classtan kalıtım alamayan, constructor'ı olmayan method ve property'ler kümesidir esasında. Object Oriented kavramına hiç uymayan bir yapıdır.
+- Static class, bir instance'ı alınamayan, bir interface ya da diğer bir classtan kalıtım alamayan method ve property'ler kümesidir esasında. Object Oriented kavramına hiç uymayan bir yapıdır.
 - Extension methodlar, Helper methodlar, global sabit değerler veya builder methodlar (örn: Firma.BosTekilFirma() gibi) vb durumlar haricinde kullanımının bize getirisinden çok götürüsü olacaktır.
 - Peki static class bizi hangi noktalarda kısıtlar? 
 	*	Static methodlar üzerinde test yazabilme kapasitemiz oldukça kısıtlanır. Örneği, interface'i, mock'u oluşturulamayan bir yapıdan söz ediyoruz sonuç olarak.

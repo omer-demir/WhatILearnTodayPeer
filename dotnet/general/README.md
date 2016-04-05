@@ -37,6 +37,13 @@
 **Internal ile İşaretlenmiş Sınıfların Diğer Namespacelere açma**
 Bu işlemi yapabilmek için *AssemblyInfo* üzerinden `[assembly: InternalsVisibleTo("namespace")]` yeterli olacaktır.
 
+**Static classı özel kullanım durumları dışında kullanmamak gerekir**
+
+- Static class, bir instance'ı alınamayan, bir interface ya da diğer bir classtan kalıtım alamayan, constructor'ı olmayan method ve property'ler kümesidir esasında. Object Oriented kavramına hiç uymayan bir yapıdır.
+- Extension methodlar, Helper methodlar, global sabit değerler veya builder methodlar (örn: Firma.BosTekilFirma() gibi) vb durumlar haricinde kullanımının bize getirisinden çok götürüsü olacaktır.
+- Peki static class bizi hangi noktalarda kısıtlar? 
+	*	Static methodlar üzerinde test yazabilme kapasitemiz oldukça kısıtlanır. Örneği, interface'i, mock'u oluşturulamayan bir yapıdan söz ediyoruz sonuç olarak.
+	*	SOLID prensiplerine uymaz. Her seferinde bizzat static class'ımızı değiştirmek zorunda kalırız. Her değişen veya eklenen durum için if'ler else'ler switch'ler kullanarak takla atmak durumunda kalırız. Static class'ımız herhangi bir bütünlük taşıyamayacağı için zaman geçtikçe method yığını olarak hizmet edecektir. 
 
 
 

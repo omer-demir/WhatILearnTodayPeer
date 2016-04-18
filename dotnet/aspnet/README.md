@@ -12,3 +12,10 @@
 	- Sanırım Microsoft NodeJs desteğini kendini ona yönlendirmeye başlamasından belli ediyor.
 	- Tüm fonksiyonları async yapmaya sizi bir nevi zorluyor sayılır.
 - ASP NET 5 te özellikle mvc'nin kullandığı özellikleri Startup.cs'e tanımlarken sırasına dikkat etmek lazım.
+- PostSharp web uygulamalarında kullanıldığı sırada byDefault disabled geliyor. Buna dikkat etmek lazım. Proje ayarlarından PostSharp bölümünden **enabled** olduğunu doğrulamak lazım.
+- RenderAction vs Action vs Partial vs RenderPartial
+	- RenderAction void döner ve `{@Html.RenderAction("");}` şeklinde çalıştırmak lazım. Aksiyonların çağırımında kullanılır. Direk view'i çağırmaz.
+	- Action ise seçilen aksiyonun cevabını döner ekrana
+	- Partial ise verilen partial view html'ini döner. Ekstra data verme durumunda da kullanılabilir.
+	- RenderPartial ise void döner. Ekranın Stream'ine Html response'u otomatik ekler. Tıpkı RenderAction gibi kullanılır.
+- 

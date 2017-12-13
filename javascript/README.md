@@ -6,7 +6,7 @@ You may not see it in examples but there is.
 - **Null** means object allocates in memory with null value. That means object has an empty value.
 
 - undefined check için aşağıdaki metodlar kullanılır. Bunların en performanslısı **4.** dur 
-	-       ```javascript
+ ```javascript
 	function isUndefined(object){
         return object==undefined;
       }

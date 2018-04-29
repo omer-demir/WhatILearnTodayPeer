@@ -72,4 +72,9 @@ we can use BASE approachh - basic availability, soft state and eventual consiste
 
 
 
+## API Gateway
 
+![api-gateway-structure](api-gateway.png)
+
+
+Example to use is **KONG API Gateway**

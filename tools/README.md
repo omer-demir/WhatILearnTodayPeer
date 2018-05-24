@@ -29,3 +29,11 @@ Distrubuted mimaride tek veriye birden fazla yapı ulaşmak istediği durumları
 Ağda bağlı bulunan nodelar arası **_health checking_**, **_status_** tarzı bilgilerin paylaşıldığı yapı
 
 ![image](https://www.consul.io/assets/images/consul-arch-5d4e3623.png)
+
+### Scout2
+
+Scout2 is a security auditing tool for AWS environments. Instead of manually navigating through web pages, you can rely on Scout2 to fetch all the configuration data of an AWS environment for you; it even generates an attack surface report. Scout2 ships with preconfigured rules and can be easily extended to support more services and test cases. Since Scout2 only performs AWS API calls to fetch configuration data and identify security gaps, it is not necessary to complete and submit the AWS Vulnerability / Penetration Testing Request Form.
+
+### Contentful
+
+CMS platform is feed from different sources.

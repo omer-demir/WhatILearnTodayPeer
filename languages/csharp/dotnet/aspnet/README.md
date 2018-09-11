@@ -1,0 +1,21 @@
+- MVC’de global olarak error sayfasını göstermek ya da her yerde handle etmek istiyorsak bir tane HandleErrorAttribute tanımlarız. Bunu da Filter congif altında RegisterGlobalFilters metodunda filters.add diyerek ekleriz. – ActionFilterAttribute
+- MVC’de Windows authentication için projenin properties’e git oradan Windows authentication’ı true yap
+- MVC’de caching için doğru süreyi bulmak zor o yüzden web config kullanarak caching profile tanımlayabiliriz.
+- Client side tarafında lokalizasyonu çözmek için web config tanımı kullanılır.
+- OWIN konusunda “Open Web Inteface .NET” açılımı. OWIN bize daha basit ve daha az dependencyli bir ortam sunmakta. NodeJS gibi çalışıyor.
+- Katana OWIN için .NET implementasyonu aslında. Kendi modüllerini kullanmaya olanak sağlıyor sana.
+- ASPNET 5 ile artık web sitesi geliştirme kolaylaşmaya başladı özellikle; Middleware kavramı geniş olarak yer almakta.
+	- Fluent Api yardımıyla dll yerine paketlerinizi seçebiliyorsunuz.
+	- NPM, Bower, Nuget paketlerini yönetebilmeniz size bir çok özellik sağlıyor.
+	- Grunt ve gulp gibi toolları kullanarak geliştirme sonrası süreci hızlandırabiliyoruz.
+	- Bydefault gelen dependency injection ile artık güvence altında sayılırız. 
+	- Sanırım Microsoft NodeJs desteğini kendini ona yönlendirmeye başlamasından belli ediyor.
+	- Tüm fonksiyonları async yapmaya sizi bir nevi zorluyor sayılır.
+- ASP NET 5 te özellikle mvc'nin kullandığı özellikleri Startup.cs'e tanımlarken sırasına dikkat etmek lazım.
+- PostSharp web uygulamalarında kullanıldığı sırada byDefault disabled geliyor. Buna dikkat etmek lazım. Proje ayarlarından PostSharp bölümünden **enabled** olduğunu doğrulamak lazım.
+- RenderAction vs Action vs Partial vs RenderPartial
+	- RenderAction void döner ve `{@Html.RenderAction("");}` şeklinde çalıştırmak lazım. Aksiyonların çağırımında kullanılır. Direk view'i çağırmaz.
+	- Action ise seçilen aksiyonun cevabını döner ekrana
+	- Partial ise verilen partial view html'ini döner. Ekstra data verme durumunda da kullanılabilir.
+	- RenderPartial ise void döner. Ekranın Stream'ine Html response'u otomatik ekler. Tıpkı RenderAction gibi kullanılır.
+- 
